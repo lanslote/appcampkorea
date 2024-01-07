@@ -1,206 +1,50 @@
 ---
+title: Welcome to App Camp, New Adventure!
+author: Jeongwoo Choi
+date: 2024-01-01
 layout: home
-title: Jekyll Gitbook Theme
 permalink: /
 ---
 
-Make Jelly site have a GitBook look!
+<img src="../assets/microsoftteams_appcamp-webheader3.png" style="width: 100%; float: right;" />
 
-## Demo
+<hr />
 
-Live demo on Github Pages: [https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
+App Camp: New Adventure는 Build 2023에서 열리는 이번 세션을 위해 특별히 만들어진 Teams App Camp의 새로운 실습 세트입니다:
 
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
+ * [**Build Microsoft Teams apps leveraging existing software investments**](https://build.microsoft.com/en-US/sessions/358b48ba-2608-41a5-a204-53f6f974f30f?source=/schedule){:target="_blank"} (pre-day workshop)
+ * [**From Web Services to Teams Apps using Teams Toolkit v5.0**](https://build.microsoft.com/en-US/sessions/e5152be8-46ae-4b51-8c18-6b01416cb261?source=/schedule){:target="_blank"} (hands-on lab)
 
-## Why Jekyll with GitBook
+앱 캠프의 진정한 정신에 따라, 물론 랩은 오픈 소스이기 때문에 컨퍼런스가 끝난 후에도 누구나 즐길 수 있습니다. 피드백과 참여는 언제나 감사합니다! 피드백과 함께 [깃허브에 이슈를 추가](https://github.com/microsoft/app-camp/issues/new?labels=new%20labs){:target="_blank"} 해주시거나 저희에게 직접 연락해 주세요. 감사합니다!
 
-GitBook is an amazing frontend style to present and organize contents (such as book chapters
-and blogs) on Web. The typical to deploy GitBook at [Github Pages][1]
-is building HTML files locally and then push to Github repository, usually to the `gh-pages`
-branch. It's quite annoying to repeat such workload and make it hard for people do version
-control via git for when there are generated HTML files to be staged in and out.
-
-This theme takes style definition out of generated GitBook site and provided the template
-for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
-to [Github Pages][1] without generating and uploading HTML bundle every time when there are
-changes to the original repo.
-
-## How to Get Started
-
-This theme can be used just as other [Jekyll themes][1] and support [remote theme][12],
-see [the official guide][13] as well.
-
-You can introduce this jekyll theme into your own site by either
-
-- [Fork][3] this repository and add your markdown posts to the `_posts` folder.
-- Use as a remote theme in your [`_config.yml`][14](just like what we do for this
-  site itself),
-
-```yaml
-remote_theme: sighingnow/jekyll-gitbook
-```
-
-### Deploy Locally with Jekyll Serve
-
-This theme can be ran locally using Ruby and Gemfiles.
-
-[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) - GitHub
-
-## Full-text search
-
-The search functionality in jekyll-gitbook theme is powered by the [gitbook-plugin-search-pro][5] plugin and is enabled by default.
-
-[https://sighingnow.github.io/jekyll-gitbook/?q=generated](https://sighingnow.github.io/jekyll-gitbook/?q=generated)
-
-## Code highlight
-
-The code highlight style is configurable the following entry in `_config.yaml`:
-
-```yaml
-syntax_highlighter_style: colorful
-```
-
-The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
-style can be added to [./assets/gitbook/rouge/](./assets/gitbook/rouge/).
-
-## How to generate TOC
-
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
-
-```yaml
-toc:
-    enabled: true
-    h_min: 1
-    h_max: 3
-```
-
-## Google Analytics, etc.
-
-The jekyll-gitboook theme supports embedding the [Google Analytics][7], [CNZZ][8] and [Application Insights][9] website analytical tools with the following
-minimal configuration in `_config.yaml`:
-
-```yaml
-tracker:
-  google_analytics: "<YOUR GOOGLE ANALYTICS KEY, e.g, UA-xxxxxx-x>"
-```
-
-Similarly, CNZZ can be added with the following configuration in `_config.yaml`
-
-```yaml
-tracker:
-  cnzz: "<YOUR CNZZ ANALYTICS KEY, e.g., xxxxxxxx>"
-```
-
-Application Insights can be added with the following configuration in `_config.yaml`
-
-```yaml
-tracker:
-  application_insights: "<YOUR APPLICATION INSIGHTS CONNECTION STRING>"
-```
-
-## Disqus comments
-
-[Disqus](https://disqus.com/) comments can be enabled by adding the following configuration in `_config.yaml`:
-
-```yaml
-disqushandler: "<YOUR DISQUS SHORTNAME>"
-```
-
-## Extra StyleSheet or Javascript elements
-
-You can add extra CSS or JavaScript references using configuration collections:
-
-- extra_css: for additional style sheets. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-- extra_header_js: for additional scripts to be included in the `<head>` tag, after the `extra_css` has been added. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-- extra_footer_js: for additional scripts to be included at the end of the HTML document, just before the site tracking script. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-
-## Customizing font settings
-
-The fonts can be customized by modifying the `.book.font-family-0` and `.book.font-family-1` entry in [`./assets/gitbook/custom.css`][10],
-
-```css
-.book.font-family-0 {
-    font-family: Georgia, serif;
-}
-.book.font-family-1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-```
-
-## Tips, Warnings and Dangers blocks
-
-The jekyll-gitbook theme supports customized kramdown attributes (`{: .block-tip }`, `{: .block-warning }`,
-`{: .block-danger }`) like that displayed in [the discord.js website][11]. The marker can be used like
-
-```markdown
-> ##### TIP
+> #### Here are the labs
 >
-> This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
-> this or a similar version after installation.
+> * [**Lab 1 - Create your first app with Teams Toolkit**](./2024-01-02-1.create-app.html) 이 랩에서는 Teams Toolkit을 설정하고 Teams 메시지 확장을 만드는 방법을 알아보겠습니다.
+> * [**Lab 2 - Integrate business data with your application**](./2024-01-03-2.integrate-web-service.html) 이 실습에서는 새로운 앱을 'Northwind Suppliers’라고 브랜딩하고, Microsoft Teams 대화에서 Northwind Traders 샘플 데이터베이스의 데이터를 삽입할 수 있는 기능을 제공합니다. 또한 메시지 확장을 사용하여 어댑티브 카드를 생성하고 전송하는 방법을 배우게 됩니다.
+> * [**Lab 3 - Add link unfurling**](./2024-01-04-3.add-link-unfurling.html) 이 랩에서는 사용자가 대화에 URL을 포함할 때 사용자 정의 요약을 제공하는 링크 언퍼링 기능을 사용하는 방법을 배우게 됩니다.
+> * [**Lab 4 - Action message extensions with Open AI**](./2024-01-05-4.add-ai.html) 이 랩에서는 “액션” 메시지 확장 기능을 만드는 방법을 배울 수 있습니다. 이 기능은 직접 실행하거나 다른 팀 메시지의 컨텍스트 메뉴에서 실행하여 해당 메시지에 대한 작업을 수행할 수 있습니다. 이 랩에서는 Open AI 상업 웹 서비스(Azure 또는 Open AI 계정을 사용하여)를 이용하여 메시지를 생성합니다.
+> * [**Lab 5 - Single Sign-on and Microsoft Graph**](./2024-01-06-5.add-sso.html) 이 실습에서는 Azure AD Single Sign-On을 사용하여 사용자를 인증하고 Microsoft Graph API를 호출하는 방법을 배웁니다. 이와 같은 과정은 로그인한 사용자를 대신하여 Azure AD로 보호되는 웹 서비스를 호출할 때 사용됩니다.
+> * [**Lab 6 - Run the app in Outlook**](./2024-01-07-6.run-in-outlook.html) 이 랩에서는 Microsoft Outlook에서 Northwind Suppliers 애플리케이션을 실행합니다.
 {: .block-tip }
-```
 
-Rendered page can be previewed from
+<a href="./2024-01-02-1.create-app.html">
+  <img src="../assets/new-adventure/arrow-start-here.png" style="width: 20%">
+</a>
 
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html)
+Lab 1부터 시작해보세요. 이 곳에서는 Teams Toolkit을 설치하고, Teams에서 사용할 수 있는 메시지 확장 기능을 만들어봅니다.
 
-## Cover image inside pages
+## App Camp at Build 2023
 
-The jekyll-gitbook theme supports adding a cover image to a specific page by adding
-a `cover` field to the page metadata:
+Build 세션의 제목과 요약은 다음과 같습니다:
 
-```diff
-  ---
-  title: Page with cover image
-  author: Tao He
-  date: 2022-05-24
-  category: Jekyll
-  layout: post
-+ cover: /assets/jekyll-gitbook/dinosaur.gif
-  ---
-```
+### Build Microsoft Teams apps leveraging existing software investments
 
-The effect can be previewed from
+_마이크로소프트 팀즈가 협업 도구뿐만 아니라 협업 애플리케이션을 구축할 수 있는 플랫폼임은 이미 알고 계실 것입니다. 하지만 팀즈는 기존의 웹 애플리케이션과 서비스를 확장할 수 있도록 설계되었다는 사실은 잘 모르실 수도 있습니다. 팀즈 앱을 제공하면 사용자 경험을 간소화하고, 사용자가 마이크로소프트 365에서 매일 작업하는 동안 앱으로 유입시킬 수 있습니다. 이 실습 워크샵에서는 기존의 웹 페이지, REST API, 그리고 OpenAI 인공지능 서비스를 기반으로 팀즈 앱을 만들어 보게 됩니다. 팀즈 앱이 내부적으로 어떻게 작동하는지, 그리고 팀즈 툴킷이 개발 과정을 어떻게 가속화하는지 배울 수 있습니다. 저희와 함께하셔서 기업용이나 ISV용 앱을 마이크로소프트 팀즈로 가져오는 과정을 시작해보세요!_
 
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-05-24-page_cover.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-05-24-page_cover.html)
+이 실습은 하루 종일 진행되는 워크숍의 주요 내용입니다. 학생들은 App Camp 실습 [A-01, A-02, A-03](https://microsoft.github.io/app-camp/#path-a-start-with-azure-ad){:target="_blank"} 을 통해 웹 기반 애플리케이션을 Microsoft Teams의 탭으로 재사용하는 방법을 배울 것입니다. 또한 새로운 [Extend](https://microsoft.github.io/app-camp/aad/ExtendTeamsApp/){:target="_blank"} 실습을 시도해보고, 이 페이지들을 Microsoft Outlook과 Microsoft 365 홈페이지에 표시하는 방법을 알아볼 수 있습니다.
 
-## Diagrams with mermaid.js
+### From Web Services to Teams Apps using Teams Toolkit v5.0
 
-This jekyll-theme supports [mermaid.js](https://mermaid.js.org/) to render diagrams
-in markdown.
+_이 실습에서는 Microsoft Teams와 Outlook을 위한 애플리케이션을 개발하여 비즈니스 데이터를 채팅과 이메일로 가져올 수 있는 방법을 배웁니다. 이 애플리케이션은 엔터프라이즈와 상업적인 REST 서비스에 기반하여 만들어졌습니다. 이 서비스들은 현재 컴퓨팅 환경에서 매우 흔하게 사용되고 있습니다. 이를 통해 사용자들은 비즈니스 상황을 공유하고, 수신자들을 애플리케이션의 상황에 맞게 바로 연결할 수 있습니다. 새로운 버전의 Teams Toolkit은 이 과정을 쉽게 도와줍니다! 개발 능력을 향상시키고 조직의 생산성을 높이는 강력한 Teams 애플리케이션을 만들 수 있는 이 기회를 놓치지 마세요._
 
-To enable the mermaid support, you need to set `mermaid: true` in the front matter
-of your post.
-
-```markdown
----
-mermaid: true
----
-```
-
-The example can be previewed from
-
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2023-08-31-mermaid.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2023-08-31-mermaid.html)
-
-## License
-
-This work is open sourced under the Apache License, Version 2.0.
-
-Copyright 2019 Tao He.
-
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
-[5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
-[6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
-[7]: https://analytics.google.com/analytics/web/
-[8]: https://www.cnzz.com/
-[9]: https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
-[10]: https://github.com/sighingnow/jekyll-gitbook/blob/master/gitbook/custom.css
-[11]: https://discordjs.guide/popular-topics/canvas.html#setting-up-napi-rs-canvas
-[12]: https://rubygems.org/gems/jekyll-remote-theme
-[13]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-[14]: https://github.com/sighingnow/jekyll-gitbook/blob/master/_config.yml
+이 시리즈의 1-4번까지의 실습을 체험할 수 있는 1시간짜리 핸즈온 랩입니다.
